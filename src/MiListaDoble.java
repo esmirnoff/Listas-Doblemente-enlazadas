@@ -166,7 +166,7 @@ public class MiListaDoble implements ListInterface {
         }
         if (node == cola) {
             if (cola.anterior != null) {
-                cola.anterior = cola;
+                cola = cola.anterior;
                 cola.siguiente = null;
             }else{
                 cola = null;
@@ -176,7 +176,7 @@ public class MiListaDoble implements ListInterface {
         }
         if (node == cabeza){
             if(cabeza.siguiente != null){
-                cabeza.siguiente = cabeza;
+                cabeza = cabeza.siguiente;
                 cabeza.anterior = null;
             }else {
                 cabeza = null;
